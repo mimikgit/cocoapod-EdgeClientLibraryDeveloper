@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EdgeClientLibraryDeveloper"
-  s.version      = "5.4.0"
+  s.version      = "5.5.0"
   s.summary      = "mimik edge client library"
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 The mimik Client Library for iOS suite consists of three individual cocoapod components:
     - EdgeCore
-    - EdgeEngine (or EdgeEngineDeveloper)
+    - EdgeEngineDeveloper (or EdgeEngine for enterprise)
     - EdgeUser
   DESC
 
@@ -28,8 +28,8 @@ The mimik Client Library for iOS suite consists of three individual cocoapod com
   s.source       = { :git => "https://github.com/mimikgit/cocoapod-EdgeClientLibraryDeveloper.git", :tag => "#{s.version}" }
   s.swift_versions = '5.0'
 
-  s.dependency 'EdgeCore', '~> 5.4.0'
-  s.dependency 'EdgeEngineDeveloper', '~> 5.4.0'
+  s.dependency 'EdgeCore', '~> 5.5.0'
+  s.dependency 'EdgeEngineDeveloper', '~> 5.5.0'
 
   s.platform = 'ios', '15.0'
 end
